@@ -1,0 +1,41 @@
+{
+    "user" : {
+        "intro": "My web page", 
+        "fullName": "Noon Ibrahim",
+        "photo" : "https://tse2.mm.bing.net/th?id=OIP.ZpjLjuQ0gPu8sXwmIHapPwHaKe&pid=Api&P=0&h=180"
+    },
+    "city" : {
+        "name" : "Tbilisi",
+        "photo" : "https://tse1.mm.bing.net/th?id=OIP.0QzTQmuQQ4KDXRUwm88kjwHaE8&pid=Api&P=0&h=180",
+        "description" : "Tbilisi is the capital and largest city of Georgia, located in the eastern part of the country. The city is known for its rich culture and history, with a mix of traditional and modern architecture that reflects its diverse past. Tbilisi has been inhabited since the 5th millennium BC and has been a strategic location for trade and commerce for centuries. Some of the city's most famous landmarks include the ancient Narikala Fortress, the 13th-century Metekhi Church, and the modernist Peace Bridge over the Kura River. Today, Tbilisi is a bustling city with many restaurants, museums, and cultural events, making it a popular destination for tourists and a vibrant center of Georgian life."
+    },
+    "foreignLanguage" : {
+        "language" : "Turkish",
+        "phrases" : [{
+            "englishPhrase" : "Hello, how're you doing today?",
+            "foreignLanguage" : "Merhaba, bugün nasılsın?"
+        },
+        {
+            "englishPhrase" : "Good morning",
+            "foreignLanguage" : "Günaydın"
+        },
+        {
+            "englishPhrase" : "Nice to meet you",
+            "foreignLanguage" : "Tanıştığıma memnun oldum"
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "Engineering Business Systems for 4IR",
+            "description" : "The Fourth Industrial Revolution, 4IR, or Industry 4.0, conceptualises rapid change to technology, industries, and societal patterns and processes in the 21st century due to increasing interconnectivity and smart automation.",
+            "photo" : "4IR.jpg"
+        },
+        {
+            "name" : "4IR bootcamp",
+            "description" : "The 4IR Bootcamp initiative is tailored specifically to align career choices and studies of individuals to growing industries, relatively new industries and undersubscribed sectors to promote the inclusion of marginalized communities",
+            "photo": "bootcamp.jpg"
+            
+        }
+        
+    ]
+}

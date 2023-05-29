@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        img:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        body {
+            color: rgb(46, 63, 121);
+            background-color: rgb(230, 173, 108);
+        }
+
+        table tr td {
+            color: rgb(46, 63, 121);
+        }
+        h1 {
+        text-align: center;
+      }
+      .button:hover {
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+h2 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class="button"><a href="index-bootstrap.html">bootstrap</a></button>
+    <button class="button"><a href="index.html">HomePage</a></button>
+
+    <div class="container">
+
+        <h1>materialize page</h1>
+        
+        
+
+        <div class="row">
+            <div class="col s12 m4 l6">
+
+                <h2>{{user.fullName}}</h2>
+                <br>
+                <p>"My name is Noon, and I'm a Sudanese lady currently residing in South Africa. I have a passion for
+                    swimming, and I love to spend my free time in the water. Living in South Africa has given me many
+                    opportunities to explore incredible swimming spots, I enjoy meeting new people, learning about
+                    different cultures, and trying new foods. I'm excited to continue on this journey and see where life
+                    takes me next."</p>
+            </div>
+
+            <div class="col s12 m4 l6">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img src={{user.photo}} class="w3-circle" alt="girl">
+
+            </div>
+
+        </div>
+        <hr>
+
+        <br>
+
+        <div>
+            <div>
+                <div class="row">
+
+                    <h2>{{city.name}}</h2>
+                    <div class="col s12 m4 l6">
+                        <img src={{city.photo}} class="w3-border" alt="Tbilisi">
+                    </div>
+
+                    <div class="col s12 m4 l6">
+
+                        <p>{{city.description}}</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="col-md">
+            <h2 class="w3-center">ForeignLanguage</h2>
+
+            <div>
+                <table class="table table-bordered">
+                    {{#each foreignLanguage.phrases}}
+                    <tr>
+                        <td>{{englishPhrase}}</td>
+                        <td>{{foreignLanguage}}</td>
+
+                    </tr>
+                    {{/each}}
+
+                </table>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <div class="row">
+            <h4>Favorite Subjects</h4>
+            {{#each favouriteSubjects}}
+            <div class="col s12 m4 l6">
+
+                <p>{{name}}</p>
+                <img src={{photo}} >
+                <p>{{description}}</p>
+
+            </div>
+
+            {{/each}}
+        </div>
+    </div>
+    <a href="index-bootstrap.html">bootstrap</a>
+</body>
+
+</html>

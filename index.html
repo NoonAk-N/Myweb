@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+         .button:hover {
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+    </style>
+
+</head>
+
+<body>
+    <button class="button"><a href="index-bootstrap.html">bootstrap</a></button>
+    <button class="button"><a href="index-materialize.html">materialize</a></button>
+
+
+    <div>
+        <h1>{{intro.title}}</h1>
+    </div>
+    <div>
+        <h2 class="text-align=center">{{user.fullName}}</h2>
+        <img src={{user.photo}}>
+
+    </div>
+    <hr>
+    <div>
+        <h2>{{city.name}}</h2>
+        <img src={{city.photo}} alt="Tibilsi">
+        <p>{{city.description}}</p>
+
+    </div>
+    <hr>
+    <div>
+        <h2>{{foreignLanguage.language}}</h2>
+
+        <table class="table table-bordered">
+
+            <thead>
+                {{#each foreignLanguage.phrases}}
+                   <tr>
+                       <td>{{foreignPhrase}}</td>
+                    <td>{{englishPhrase}}</td>
+
+                   </tr>
+                {{/each}}
+            </thead>
+
+        </table>
+
+
+
+    </div>
+    <hr>
+    <div>
+        <h2>FavouriteSubjects</h2>
+        <a href="./index-bootstrap.html">bootstrap</a>
+        <a href="./index-materialize.html">materialize</a>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
