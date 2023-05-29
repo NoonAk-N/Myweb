@@ -2,7 +2,7 @@ import handlebars from 'vite-plugin-handlebars';
 import data from "./data.json" assert{type:'json'};
 import { defineConfig } from 'vite';
 export default defineConfig ({
-    base: './repo/',
+    base: '/Myweb/',
     build: {
         rollupOptions: {
             input : {
